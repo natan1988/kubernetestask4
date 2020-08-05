@@ -5,7 +5,6 @@ metadata:
 spec:
   selector:
     tier: frontend
-    app: wordpress
   ports:
   - protocol: TCP
     port: 80
@@ -19,6 +18,7 @@ metadata:
   name: wordpress
   labels:
     app: wordpress
+    tier: frontend
 spec:
   replicas: 1
   selector:
